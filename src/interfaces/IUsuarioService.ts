@@ -1,6 +1,5 @@
-import { Usuario } from './../models/Usuario';
+import { Usuario } from 'src/models/Usuario';
 import { Observable } from 'rxjs';
-
 
 export interface IUsuarioService{
     cadastrar(usuario:Usuario): Observable<Usuario>

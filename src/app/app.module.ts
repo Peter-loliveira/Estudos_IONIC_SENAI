@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+
 import { UsuarioService } from 'src/services/UsuarioService';
 import { CarroService } from 'src/services/CarroService';
 import { LoginService } from 'src/services/LoginService';

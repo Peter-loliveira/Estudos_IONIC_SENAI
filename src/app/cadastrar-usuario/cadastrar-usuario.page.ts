@@ -1,3 +1,4 @@
+import { Usuario } from 'src/models/Usuario';
 import { UsuarioService } from 'src/services/UsuarioService';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarUsuarioPage implements OnInit {
 
+  public usuario: Usuario = new Usuario()
   constructor(private _usuarioService: UsuarioService) {
+    console.log(this.usuario);
+    
   }
 
-  ngOnInit() {
+  ngOnInit() {  
+  }
+  
+  criarUsuario() {
+    console.log(this.usuario);
+    this._usuarioService.cadastrar(this.usuario)
+    
   }
 
 }
